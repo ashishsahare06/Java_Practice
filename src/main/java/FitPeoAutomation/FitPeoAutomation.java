@@ -32,27 +32,17 @@ public class FitPeoAutomation {
 	          JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("window.scrollBy(0,250)");
 			
-			
-			
 	        WebElement slider = driver.findElement(By.xpath("//*[@id=\":r0:\"]")); // Step 4: Adjust the Slider to Set Its Value to 820
 	        Thread.sleep(500);
 	        ((JavascriptExecutor) driver).executeScript("arguments[0].value=820;", slider);
 
 	          	 Thread.sleep(1500); 
-	          	 
-	          // Step 5: Update the Text Field with the Value 560 	 
-//	     WebElement sliderTextBox = driver.findElement);
-
-//	    sliderTextBox.click();
-//	    sliderTextBox.clear();
-	          	WebElement slider3 = driver.findElement(By.xpath("//*[@id=\":r0:\"]"));
-	          	
-	          	js.executeScript("arguments[0].value='560';", slider3);
-//	        
-	      
-	     slider3.clear();
-	     js.executeScript("arguments[0].value='560';", slider3);
-	       Thread.sleep(1000);
+	          
+	          	 WebElement slider3 = driver.findElement(By.xpath("//*[@id=\":r0:\"]"));
+	           	js.executeScript("arguments[0].value='560';", slider3);
+	           	slider3.clear();
+	           	js.executeScript("arguments[0].value='560';", slider3);
+	           	Thread.sleep(1000);
 
 	        
 	        
@@ -77,7 +67,7 @@ public class FitPeoAutomation {
 	       if (!actualTotalReimbursement.equals("$110700")) {
 	           throw new AssertionError("Expected total reimbursement to be $110700, but got " + actualTotalReimbursement);
 	       }
-	        Thread.sleep(1000); // Allow time for selection to update
+	        Thread.sleep(1000); 
 	        
 		} catch (Exception e) {
 			 e.printStackTrace();
