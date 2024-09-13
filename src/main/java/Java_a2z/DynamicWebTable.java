@@ -1,4 +1,4 @@
-package FitPeoAutomation;
+package Java_a2z;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

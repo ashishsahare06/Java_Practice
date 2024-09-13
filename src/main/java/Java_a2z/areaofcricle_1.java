@@ -1,4 +1,4 @@
-package FitPeoAutomation;
+package Java_a2z;
 
 import java.util.Scanner;
 

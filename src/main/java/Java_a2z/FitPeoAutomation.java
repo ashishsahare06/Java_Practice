@@ -1,4 +1,4 @@
-package FitPeoAutomation;
+package Java_a2z;
 
 import java.time.Duration;
 
